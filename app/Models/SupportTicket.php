@@ -66,7 +66,6 @@ class SupportTicket extends Model
         return Attribute::make(
             get: function () {
                 $value = $this->status;
-
                 return SupportTicketService::statusTextfromCode($value);
             }
         );
@@ -77,7 +76,6 @@ class SupportTicket extends Model
         return Attribute::make(
             get: function () {
                 $value = $this->getRawOriginal('status');
-
                 return $value == SupportTicket::STATUS['PENDING'];
             }
         );
@@ -88,7 +86,6 @@ class SupportTicket extends Model
         return Attribute::make(
             get: function () {
                 $value = $this->getRawOriginal('status');
-
                 return $value == SupportTicket::STATUS['VIEWED'];
             }
         );

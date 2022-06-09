@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\SupportTicket;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Lenses\SupportTicket\OrderByDate;
 use App\Http\Filters\SupportTicket\StatusFilter;
 use App\Http\Requests\SupportTicket\CreateSupportTickerRequest;
-use App\Lenses\SupportTicket\OrderByDate;
 use App\Models\SupportTicket;
 use App\Notifications\SupportTicketCreated;
 use App\Services\SupportTicket\SupportTicketReplyService;

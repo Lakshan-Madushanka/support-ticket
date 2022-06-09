@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Lenses\SupportTicket;
+namespace App\Http\Controllers\Lenses\SupportTicket;
 
 use Illuminate\Database\Eloquent\Builder;
 
