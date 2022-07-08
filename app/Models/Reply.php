@@ -37,6 +37,7 @@ class Reply extends Model
                 if (strlen($value) > 50) {
                     return substr($value, 0, 25).'...';
                 }
+
                 return $value;
             }
         );
